@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    padding: 20px;
+    background-color: bisque;
+}
+
+header h1{
+    text-align: center;
+    padding: 20px;
+    color: rgb(40, 31, 19);
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: 10px;
+}
+
+
+main{
+    background-color: burlywood;
+}
+
+.background{
+    text-align: center;
+    background-position: right;
+    padding: 20px;
+    text-size-adjust: 120%;
+    color: burlywood;
+    background-color: rgb(40, 31, 19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.background1{
+    overflow: hidden;
+    text-align: center;
+    color: rgb(40, 31, 19);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: bolder;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+}
+
+.wrapper .icon{
+    position: relative;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+} 
+
+.wrapper .icon{
+    color: burlywood;
+    transition: .4s linear;
+}
+
+wrapper tooltip{
+position: absolute;
+top: 0;
+font-size: 14px;
+background-color: #111;
+color: burlywood);
+padding: 5px 8px; border-radius: 10px;
+box-shadow: @ 10px 10px rgba(0, 0, 0, 0.1);
+opacity: 0;
+pointer-events: none;
+transition: all 0.3s cubic-bezier (0.68, 0.55, 8.265, 1.55);
+}
+
+.wrapper .icon::before, 
+.wrapper .icon::after { 
+content: '';
+position: absolute; 
+box-sizing: border-box;
+width: 100%;
+left: 0; 
+height: 100%;
+top: 0;
+transition: .4s linear;
+}
+.wrapper .icon:hover .tooltip { 
+top: -45px;
+opacity: 1; 
+pointer-events: auto;
+visibility: visible;
+}
+
+.wrapper .icon:hover span, 
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); 
+    transform: scale(.8);
+    transition: .4s linear;
+}
+    
+.wrapper .icon:hover::before { 
+     border-radius: 50%;
+     border-left: 4px solid;
+     border-right: 4px solid;
+     transform: skewX(20deg);
+     color: burlywood;
+    
+    }
+    
+.wrapper .icon:hover::after {
+    
+     border-radius: 50%;
+     border-top: 4px solid; 
+     border-bottom: 4px solid; 
+     transform: skewY(-20deg); 
+     color: burlywood);
+    
+    }
+
+.wrapper{
+    background-color: rgb(40, 31, 19);
+}
+    
+
+.social{
+    text-decoration: none;
+    text-align: center;
+    color: burlywood;
+    font-size: 35px;
+    font: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(40, 31, 19);
+    overflow: hidden;
+    padding: 30px;
+
+}
+
+.a{
+    color: burlywood;
+}
+
+.we{
+    text-align: center;
+    color: rgb(40, 31, 19);
+    font: bolder;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.wet{
+    text-align: center;
+    color: rgb(40, 31, 19);
+    font: bolder;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.k{
+    border-radius: 70px;
+    overflow: hidden;
+}
+
+.f{
+    border-radius: 70px;
+    float:right;
+    overflow: hidden;
+}
+
+.i{
+    float: right;
+    overflow: hidden;
+}
+.products{
+    color: rgb(40, 31, 19);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+}
+
+.num{
+    color: rgb(40, 31, 19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    word-spacing: 450px;
+    padding-left: 20px;
+}
+
+.title{
+    color: rgb(40, 31, 19);
+    word-spacing: 255px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.titled{
+    color: rgb(40, 31, 19);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 355px;
+}
+
+.productpic{
+    float: right;
+    padding-right: 20px;
+}
+
+.patti{
+    padding-left: 180px;
+    border-radius: 1000px;
+}
+
+.profile_img {
+    border-radius: 20%;
+    margin-left: 450px;
+  }
+  .profile_name {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+    color: rgb(40, 31, 19);
+  }
+  
+  .about_content {
+    justify-content: center;
+    color: rgb(40, 31, 19);
+    font-weight: 900;
+    padding-bottom: 10px 0px 20px 0px;
+    text-align: center;
+  }
+  
+  .about_title {
+    font-size: 1.45em;
+    padding: 0px 10px;
+    color: rgb(40, 31, 19);
+
+    text-align: center;
+  }
+  
+  
+
+.insta_handle {
+    color: rgb(40, 31, 19);
+  }
+
+  .sm-handle {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sm-handle a {
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    background-color: rgb(125 125 125 / 25%);
+    text-decoration: none;
+  }
+  
+  .sm-handle a:hover {
+    background-color: rgb(30 30 30 / 25%);
+  }
+  
+  .founder {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+  .abo{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(40, 31, 19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+footer{
+    background-color: rgb(40, 31, 19);
+    overflow: hidden;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 63px;
+    text-align: center;
+    color: burlywood;
+}
+
+.o{
+    border-radius: 70px;
+}
